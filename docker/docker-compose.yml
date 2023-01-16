@@ -6,7 +6,7 @@ services:
     ports: 
       - 3000:3000
     networks:
-      - todoapp
+      - todonetwork
   todofront:
     image: todofrontend
     restart: always
@@ -17,7 +17,7 @@ services:
     depends_on:
       - todoback
     networks:
-      - todoapp
+      - todonetwork
   todotests: 
     image: todotests
     restart: always
@@ -27,7 +27,7 @@ services:
       - todoback
       - todofront
     networks:
-      - todoapp
+      - todonetwork
 
 networks:
-  todoapp:
+  todonetwork:
