@@ -5,6 +5,8 @@ services:
     restart: on-failure
     ports: 
       - 3000:3000
+    networks:
+      - todoapp
   todofront:
     image: todofrontend
     restart: on-failure
@@ -14,6 +16,8 @@ services:
       - 3001:3001
     depends_on:
       - todoback
+    networks:
+      - todoapp
   todotests: 
     image: todotests
     restart: on-failure
@@ -22,3 +26,8 @@ services:
     depends_on:
       - todoback
       - todofront
+    networks:
+      - todoapp
+
+networks:
+  todoapp:
