@@ -7,7 +7,7 @@ services:
   todofront:
     build: ./todo-app/front-end
     environment:
-      - REACT_API_HOST=todoback
+      - REACT_APP_API_HOST=todoback
     ports: 
       - 3000:3000
     depends_on:
