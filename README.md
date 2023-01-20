@@ -1,6 +1,6 @@
 # :whale2: Projeto Docker To do List :whale2:
 
-Para colocarmos em prática o aprendizado da primeira seção de back-end nos foi proposto este projeto em que colocamos em prática os comandos para criação de imagens e containers do Docker para uma aplicação já pronta. Precisamos desenvolver também arquivos Dockerfile e docker-compose.
+Para colocarmos em prática o aprendizado da primeira seção de back-end nos foi proposto este projeto em que colocamos em prática os comandos para criação de imagens e containers para uma aplicação já pronta utilizando o Docker. Precisamos desenvolver arquivos Dockerfile e docker-compose.
 
 ## Tecnologias usadas
 Back-end:
